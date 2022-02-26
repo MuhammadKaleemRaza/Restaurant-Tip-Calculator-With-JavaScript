@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Resturant tip calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Resturant Tip Calculator</h1>
+    <p class="warning"></p>
+    <div class="bill-amount">
+      <label for="amount">Bill Amount:</label>
+      <input type="number" name="amount" id="amount">
+    </div>
+    <div class="div-service">
+      How was your Service?
+      <select id="serviceQuality">
+        <option value="0" selected disabled>---Choose an option---</option>
+        <option value="0.3">30%-Outstanding</option>
+        <option value="0.2">20%-Excellent</option>
+        <option value="0.15">15%-Good</option>
+        <option value="0.1">10%-Bad</option>
+        <option value="0.05">5%-Terrible</option>
+      </select>
+    </div>
+    <div class="peoples">
+      <label for="peopleamt">How many are sharing the bill?</label>
+      <input type="text" id="peopleamt" placeholder="Number of people">
+    </div>
+    <div class="submit-btn">
+      <button class="calc-btn">Calculate</button>
+    </div>
+    <h2 class="each"></h2>
+  </div>
+</body>
+
+</html>
